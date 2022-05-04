@@ -1,0 +1,177 @@
+@font-face {
+    font-family: iran;
+    src: url(./font/iranyekanweblight\(fanum\).ttf);
+}
+
+* {
+    direction: rtl;
+    font-family: iran;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafbfc;
+}
+
+
+
+nav{
+    background-color: white;
+    box-shadow: 0.5px 0.5px 0.5px #cdcdd1;
+    padding: 15px  0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-tool{
+    display: flex;
+    align-items: center;
+}
+
+.nav-tool div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.login{
+    display: flex;
+    align-items: center;   
+}
+
+.login div{
+    display: flex;
+    align-items: center;    
+}
+
+nav a{
+text-decoration: none;
+color: black;
+font-weight: bolder;
+padding-right:30px;
+font-size: 0.9rem;
+}
+
+nav img{
+    padding:  0 20px;   
+}
+
+#register{
+    background-color: #fdd835;
+    padding: 3px 15px;
+    border-radius: 6px;
+}
+
+#register:hover{
+    background-color: #fdd217;
+}
+
+
+.table-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.table-toolbar {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.table-toolbar button {
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: #f4f5f7;
+    color: black;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.table-toolbar button:hover {
+    background-color: #e1e1e1;
+    transition: 0.3s;
+}
+
+.table-toolbar .active {
+    background-color: #0c68f4;
+    color: white;
+}
+
+.table-toolbar .active:hover {
+    background-color: #0c68f4;
+    color: white;
+}
+
+.base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.base-btns {
+    background-color: #f4f5f7;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.base-btns button {
+    background-color: transparent;
+    padding: 3px 15px;
+    color: #757575;
+}
+
+
+.base-btns button:hover {
+  background-color: transparent;
+}
+
+.base-btns .base-btn-active {
+    background-color: white;
+    box-shadow: 0.5px 0.5px 0.5px #cdcdd1;
+    border-radius: 8px;
+    margin: 2px;
+    color: black;
+}
+
+.base-btns .base-btn-active:hover {
+    background-color: white;
+}
+
+table {
+    width: 95%;
+    margin: 0px auto;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+table tr td,
+th {
+    direction: ltr;
+    text-align: right;
+    padding: 10px 60px;
+}
+
+th {
+    color: #757575;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+td{
+    font-weight: bold;
+    font-size: 0.85rem;
+}

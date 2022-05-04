@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-tool">
+            <div><img src="./images/Wallex.svg"></img></div>
+            <div>
+                <a href="">بازار ها </a>
+                <img src="./images/caret-down-fill.svg" alt="" style="padding: 8px;">
+            </div>
+            <div>
+                <a href="">معامله ها</a>
+                <img src="./images/caret-down-fill.svg" alt="" style="padding: 8px;">
+            </div>
+            <div>
+                <a href="">راهنمای استفاده</a>
+            </div>
+            <div>
+                <a href="">کارمزد</a>
+            </div>
+            <div>
+                <a href="">بلاگ</a>
+            </div>
+
+        </div>
+        <div class="login">
+            <div>
+                <a href="" style="padding-left: 20px;">ورود</a>
+            </div>
+            <div>
+                <a href="" id="register">ثبت نام</a>
+            </div>
+            <div>
+                <img src="./images/moon.svg" alt="" style="width:62px;"/>
+            </div>
+        </div>
+    </nav>
+
+    <div class="table-container">
+        <div class="table-toolbar">
+            <div>
+                <button id="all" class="active" style=" margin-right:40px;">همه</button>
+                <button id="hotest">داغ ترین ها</button>
+                <button id="myChoice">منتخب من</button>
+                <button id="mostProfit">بیشترین سود</button>
+                <button id="mostLoss">بیشترین ضرر</button>
+            </div>
+            <div class="base">
+                <h4 style="margin-left: 20px;">پایه بازار</h4>
+                <div class="base-btns"><button href="" class="base-btn-active">تومان</button><button
+                        href="">USTD</button><button href="">BTC</button></div>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>بازار</th>
+                    <th>آخرین قیمت</th>
+                    <th>تغییرات (24h)</th>
+                    <th>حجم معاملات (24h)</th>
+                    <th>تغییرات هفتگی</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
