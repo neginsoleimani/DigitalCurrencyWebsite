@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -17,56 +18,56 @@ body {
 
 
 
-nav{
+nav {
     background-color: white;
     box-shadow: 0.5px 0.5px 0.5px #cdcdd1;
-    padding: 15px  0;
+    padding: 15px 0;
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-tool{
+.nav-tool {
     display: flex;
     align-items: center;
 }
 
-.nav-tool div{
+.nav-tool div {
     display: flex;
     align-items: center;
     justify-content: start;
 }
 
-.login{
+.login {
     display: flex;
-    align-items: center;   
+    align-items: center;
 }
 
-.login div{
+.login div {
     display: flex;
-    align-items: center;    
+    align-items: center;
 }
 
-nav a{
-text-decoration: none;
-color: black;
-font-weight: bolder;
-padding-right:30px;
-font-size: 0.9rem;
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    padding-right: 30px;
+    font-size: 0.9rem;
 }
 
-nav img{
-    padding:  0 20px;   
+nav img {
+    padding: 0 20px;
 }
 
-#register{
+#register {
     background-color: #fdd835;
     padding: 3px 15px;
     border-radius: 6px;
 }
 
-#register:hover{
+#register:hover {
     background-color: #fdd217;
 }
 
@@ -102,6 +103,7 @@ nav img{
 .table-toolbar button:hover {
     background-color: #e1e1e1;
     transition: 0.3s;
+
 }
 
 .table-toolbar .active {
@@ -136,7 +138,7 @@ nav img{
 
 
 .base-btns button:hover {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 .base-btns .base-btn-active {
@@ -157,6 +159,8 @@ table {
     background-color: white;
     color: black;
     border-radius: 10px;
+    border-collapse: collapse;
+    
 }
 
 table tr td,
@@ -171,7 +175,52 @@ th {
     font-size: 0.9rem;
     font-weight: bold;
 }
-td{
+
+td {
+    display: table-cell;
+    vertical-align: middle;
     font-weight: bold;
     font-size: 0.85rem;
+}
+
+
+
+.Mychoice-container {
+    height: 450px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.Mychoice-container h3 {
+    padding: 15px 0;
+}
+
+.Mychoice-container h5 {
+    color: #757575;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #cdcdd1;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #cdcdd1;
 }

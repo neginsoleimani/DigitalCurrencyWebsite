@@ -3,6 +3,9 @@ let hotest=document.getElementById("hotest")
 let myChoice=document.getElementById("myChoice")
 let mostProfit=document.getElementById("mostProfit")
 let mostLoss=document.getElementById("mostLoss")
+let tableContainer=document.querySelector(".table-container")
+let baseTable=document.getElementById("baseTable")
+let myChoiceContainer=document.querySelector(".Mychoice-container")
 
 all.addEventListener("click",addAll)
 hotest.addEventListener("click",addHotest)
@@ -16,6 +19,8 @@ function addAll(){
     mostLoss.classList.remove("active")
     mostProfit.classList.remove("active")
     hotest.classList.remove("active")
+    baseTable.style.display="block"
+    myChoiceContainer.style.display="none"
 }
 
 
@@ -25,6 +30,8 @@ function addHotest(){
     mostLoss.classList.remove("active")
     mostProfit.classList.remove("active")
     hotest.classList.add("active")
+    baseTable.style.display="none"
+    myChoiceContainer.style.display="none"
 }
 
 
@@ -34,6 +41,9 @@ function addMyChoice(){
     mostLoss.classList.remove("active")
     mostProfit.classList.remove("active")
     hotest.classList.remove("active")
+    baseTable.style.display="none"
+    myChoiceContainer.style.display="flex"
+
 }
 
 function addMostProfit(){
@@ -42,6 +52,8 @@ function addMostProfit(){
     mostLoss.classList.remove("active")
     mostProfit.classList.add("active")
     hotest.classList.remove("active")
+    baseTable.style.display="none"
+    myChoiceContainer.style.display="none"
 }
 
 function addMostLoss(){
@@ -50,6 +62,8 @@ function addMostLoss(){
     mostLoss.classList.add("active")
     mostProfit.classList.remove("active")
     hotest.classList.remove("active")
+    baseTable.style.display="none"
+    myChoiceContainer.style.display="none"
 }
 
 
