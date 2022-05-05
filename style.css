@@ -185,13 +185,14 @@ td {
 
 
 
-.Mychoice-container {
+.Mychoice-container,.notFound {
     height: 450px;
     display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
 
 
 
@@ -202,6 +203,10 @@ td {
 .Mychoice-container h5 {
     color: #757575;
 }
+
+.notFound h3{
+    padding: 30px 0;
+} 
 
 
 /* width */

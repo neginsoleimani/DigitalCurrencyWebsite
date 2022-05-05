@@ -1,69 +1,75 @@
-let all=document.getElementById("all")
-let hotest=document.getElementById("hotest")
-let myChoice=document.getElementById("myChoice")
-let mostProfit=document.getElementById("mostProfit")
-let mostLoss=document.getElementById("mostLoss")
-let tableContainer=document.querySelector(".table-container")
-let baseTable=document.getElementById("baseTable")
-let myChoiceContainer=document.querySelector(".Mychoice-container")
+let all = document.getElementById("all")
+let hotest = document.getElementById("hotest")
+let myChoice = document.getElementById("myChoice")
+let mostProfit = document.getElementById("mostProfit")
+let mostLoss = document.getElementById("mostLoss")
+let tableContainer = document.querySelector(".table-container")
+let baseTable = document.getElementById("baseTable")
+let myChoiceContainer = document.querySelector(".Mychoice-container")
+let notFound = document.querySelector(".notFound")
 
-all.addEventListener("click",addAll)
-hotest.addEventListener("click",addHotest)
-myChoice.addEventListener("click",addMyChoice)
-mostProfit.addEventListener("click",addMostProfit)
-mostLoss.addEventListener("click",addMostLoss)
+all.addEventListener("click", addAll)
+hotest.addEventListener("click", addHotest)
+myChoice.addEventListener("click", addMyChoice)
+mostProfit.addEventListener("click", addMostProfit)
+mostLoss.addEventListener("click", addMostLoss)
 
-function addAll(){
+function addAll() {
     all.classList.add("active")
     myChoice.classList.remove("active")
     mostLoss.classList.remove("active")
     mostProfit.classList.remove("active")
     hotest.classList.remove("active")
-    baseTable.style.display="block"
-    myChoiceContainer.style.display="none"
+    baseTable.style.display = "block"
+    myChoiceContainer.style.display = "none"
+    notFound.style.display = "none"
 }
 
 
-function addHotest(){
+function addHotest() {
     all.classList.remove("active")
     myChoice.classList.remove("active")
     mostLoss.classList.remove("active")
     mostProfit.classList.remove("active")
     hotest.classList.add("active")
-    baseTable.style.display="none"
-    myChoiceContainer.style.display="none"
+    baseTable.style.display = "none"
+    myChoiceContainer.style.display = "none"
+    notFound.style.display = "flex"
 }
 
 
-function addMyChoice(){
+function addMyChoice() {
     all.classList.remove("active")
     myChoice.classList.add("active")
     mostLoss.classList.remove("active")
     mostProfit.classList.remove("active")
     hotest.classList.remove("active")
-    baseTable.style.display="none"
-    myChoiceContainer.style.display="flex"
+    baseTable.style.display = "none"
+    myChoiceContainer.style.display = "flex"
+    notFound.style.display = "none"
 
 }
 
-function addMostProfit(){
+function addMostProfit() {
     all.classList.remove("active")
     myChoice.classList.remove("active")
     mostLoss.classList.remove("active")
     mostProfit.classList.add("active")
     hotest.classList.remove("active")
-    baseTable.style.display="none"
-    myChoiceContainer.style.display="none"
+    baseTable.style.display = "none"
+    myChoiceContainer.style.display = "none"
+    notFound.style.display = "flex"
 }
 
-function addMostLoss(){
+function addMostLoss() {
     all.classList.remove("active")
     myChoice.classList.remove("active")
     mostLoss.classList.add("active")
     mostProfit.classList.remove("active")
     hotest.classList.remove("active")
-    baseTable.style.display="none"
-    myChoiceContainer.style.display="none"
+    baseTable.style.display = "none"
+    myChoiceContainer.style.display = "none"
+    notFound.style.display = "flex"
 }
 
 
@@ -91,9 +97,9 @@ fetch("https://api.wallex.ir/v1/markets")
             return {
                 name: data[coin].faBaseAsset,
                 price: Math.round(data[coin].stats.askPrice),
-                high: data[coin].stats["24h_ch"]+"%",
+                high: data[coin].stats["24h_ch"] + "%",
                 low: Math.round(data[coin].stats["24h_quoteVolume"]),
-                week:data[coin].stats["7d_ch"]+"%",
+                week: data[coin].stats["7d_ch"] + "%",
             };
         });
 
@@ -108,7 +114,7 @@ function createTag(coin) {
     var newTr = document.createElement("tr");
     Object.values(coin).forEach((element) => {
         var newTd = document.createElement("td");
-        var newBtn=document.createElement("button");
+        var newBtn = document.createElement("button");
         newTd.innerHTML = element;
         newTr.appendChild(newTd);
     });
