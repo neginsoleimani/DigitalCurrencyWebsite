@@ -8,8 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -18,21 +18,21 @@
         <div class="nav-tool">
             <div><img src="./images/Wallex.svg"></img></div>
             <div>
-                <a href="">بازار ها </a>
+                <a href="" class="nav-a">بازار ها </a>
                 <img src="./images/caret-down-fill.svg" alt="" style="padding: 8px;">
             </div>
             <div>
-                <a href="">معامله ها</a>
+                <a href="" class="nav-a">معامله ها</a>
                 <img src="./images/caret-down-fill.svg" alt="" style="padding: 8px;">
             </div>
             <div>
-                <a href="">راهنمای استفاده</a>
+                <a href=""  class="nav-a">راهنمای استفاده</a>
             </div>
             <div>
-                <a href="">کارمزد</a>
+                <a href="" class="nav-a">کارمزد</a>
             </div>
             <div>
-                <a href="">بلاگ</a>
+                <a href="" class="nav-a">بلاگ</a>
             </div>
 
         </div>
@@ -44,7 +44,8 @@
                 <a href="" id="register">ثبت نام</a>
             </div>
             <div>
-                <img src="./images/moon.svg" alt="" style="width:62px;"/>
+                <img id="theme-light" src="./images/moon.svg" alt="" style="width:62px;" />
+                <img id="theme-dark" src="./images/sun.svg" alt="" style="width:62px;"/>
             </div>
         </div>
     </nav>
@@ -77,21 +78,25 @@
             <tbody>
             </tbody>
         </table>
-        
 
-        <div class="Mychoice-container"> 
-                <img src="./images/empty-favorites.svg" alt="">
-                <h3>لیست منتخب شما خالی است .</h3>
-                 <div><h5>بازارهای منتخب تان را با زدن روی <i class="fa-regular fa-star"></i> می‌توانید به این لیست اضافه کنید.</h5></div>
+
+        <div class="Mychoice-container">
+            <img src="./images/empty-favorites.svg" alt="">
+            <h3>لیست منتخب شما خالی است .</h3>
+            <div>
+                <h5>بازارهای منتخب تان را با زدن روی <i class="fa-regular fa-star"></i> می‌توانید به این لیست اضافه
+                    کنید.</h5>
+            </div>
         </div>
 
         <div class="notFound">
             <img src="./images/cancel-close-svgrepo-com.svg" alt="" width="100px">
-                <h3>اطلاعات مورد نظر یافت نشد .</h3>
+            <h3>اطلاعات مورد نظر یافت نشد .</h3>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./theme.js"></script>
     <script src="./script.js"></script>
 </body>
 

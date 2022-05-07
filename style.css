@@ -33,6 +33,10 @@ nav {
     align-items: center;
 }
 
+#theme-dark{
+    display:none;
+}
+
 .nav-tool div {
     display: flex;
     align-items: center;
@@ -98,6 +102,7 @@ nav img {
     color: black;
     font-size: 0.9rem;
     border: none;
+    cursor: pointer;
 }
 
 .table-toolbar button:hover {
@@ -134,6 +139,7 @@ nav img {
     background-color: transparent;
     padding: 3px 15px;
     color: #757575;
+    cursor: pointer;
 }
 
 

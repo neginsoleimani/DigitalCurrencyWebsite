@@ -114,7 +114,6 @@ function createTag(coin) {
     var newTr = document.createElement("tr");
     Object.values(coin).forEach((element) => {
         var newTd = document.createElement("td");
-        var newBtn = document.createElement("button");
         newTd.innerHTML = element;
         newTr.appendChild(newTd);
     });
